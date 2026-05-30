@@ -11,21 +11,31 @@ while True:
     print("5 - SAIR")
     opcao = int(input("Digite o número da opcão que deseja: "))
 
+    match opcao:
+        case 1:
+            print("----- INSERIR DADOS -----")
+            temperatura = float(input("Insira a temperatura da nave em Celcius: "))
+            energia = float(input("Insira quanto de energia tem nas baterias em %: "))
+            potencia_ger = float(input("Insira a potencia gerada pelos paineis solares em Wats: "))
+            comunicacao = int(input("Digite o status da comunicacao (0 = anormal, 1 = normal): "))
+            consumo = float(input("Insira quanta energia foi consumida em Wats: "))
 
-    if opcao == 1:
-        print("opcao 1")
 
-    elif opcao == 2:
-        print("opcao 2")
+        case 2:
+            print(f"Temperatura da nave: {temperatura} C")
+            print(f"Porcentagem de energia das baterias: {energia} %")
+            print(f"Potencia gerada pelos paineis solares: {potencia_ger} W")
+            print(f"Status da comunicacao: {comunicacao}")
+            print(f"Energia consumida: {consumo} W")
 
-    elif opcao == 3:
-        print("opcao 3")
+        case 3:
+            print("opcao 3")
 
-    elif opcao == 4:
-        print("opcao 4")
+        case 4:
+            print("opcao 4")
 
-    elif opcao == 5:
-        print("FIM DA SIMULAÇÂO")
-        break
-    else:
-        print("Número inserido invalido!")
+        case 5:
+            print("FIM DA SIMULAÇÂO")
+            break
+        case _:
+            print("Número inserido invalido!")
