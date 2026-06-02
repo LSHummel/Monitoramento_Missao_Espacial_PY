@@ -1,5 +1,9 @@
 # Sistema Inteligente de Monitoramento de Missão Espacial
 
+## Integrantes
+Lucas Seiji Hummel RM:569673; Matheus Pimenta Martini RM: 569400; Leonardo Soares Rodrigues 
+RM: 572986 
+
 ## Descrição
 
 Este projeto simula um sistema de monitoramento para uma missão espacial experimental de uma nave que possui abastecimento energético de paineis solares implementados em sua estrutura e com baterias para armazenar a energia gerada. O programa recebe dados operacionais da nave, realiza análises automáticas e gera alertas quando situações críticas são detectadas.
